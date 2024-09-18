@@ -1,0 +1,108 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.frame {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 400px;
+	height: 400px;
+	margin-top: -200px;
+	margin-left: -200px;
+	border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	background: #fff;
+	color: #333;
+	font-family: 'Courier New', 'Courier', sans-serif;
+	background: linear-gradient(30deg,
+			rgb(68, 61, 161) 0%,
+			rgb(77, 193, 200) 100%);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+	position: absolute;
+	top: 50.8%;
+	left: 50.5%;
+	transform: translate(-50%, -50%);
+}
+
+.number {
+	display: flex;
+	position: relative;
+	height: 100px;
+	width: 200px;
+
+	.one-top {
+		position: absolute;
+		background-color: #FEFEFE;
+		top: -2px;
+		left: -16px;
+		height: 45px;
+		width: 20px;
+		transform: rotate(50deg);
+		z-index: 1;
+		border-radius: 3px;
+		box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.2);
+	}
+
+	.one-line {
+		z-index: 10;
+		position: relative;
+		background-color: #fff;
+		left: 0px;
+		height: 100px;
+		width: 24px;
+		border-radius: 3px;
+		box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.2);
+	}
+
+	.first-zero, .second-zero {
+		position: absolute;
+		left: 17px;
+		z-index: 9;
+		box-sizing: border-box;
+		height: 100px;
+		width: 100px;
+		border-radius: 50%;				
+		border: 24px solid #fff;
+		box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.2);
+		
+
+	}
+
+	.second-zero {
+		z-index: 8;
+		left: 100px;
+	}
+
+}
+
+.text {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 5px;	
+
+	.big {
+		margin: 0;
+		color: #fff;
+		font-size: 82px;
+		line-height: 60px;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+
+	.small {
+		margin: 0;
+		color: #fff;
+		font-size: 23px;
+		line-height: 20px;
+		text-transform: uppercase;
+		font-weight: 700;
+		letter-spacing: .04em;
+	}
+}
